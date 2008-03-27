@@ -1,0 +1,12 @@
+diff -urN winpdb-1.3.6/rpdb2.py winpdb-1.3.6.new/rpdb2.py
+--- winpdb-1.3.6/rpdb2.py	2008-03-09 17:58:27.000000000 +0100
++++ winpdb-1.3.6.new/rpdb2.py	2008-03-18 15:43:33.725927886 +0100
+@@ -1953,7 +1953,7 @@
+ BP_FILENAME_SEP = ':'
+ BP_EVAL_SEP = ','
+ 
+-DEBUGGER_FILENAME = 'rpdb2.py'
++DEBUGGER_FILENAME = 'rpdb2.pyo'
+ THREADING_FILENAME = 'threading.py'
+ 
+ STR_STATE_BROKEN = 'waiting at break point'
