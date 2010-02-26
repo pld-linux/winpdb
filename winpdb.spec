@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/winpdb/%{name}-%{version}.tar.gz
+# Source0-md5:	3658a9aa7ce31ab62590bc0a75635991
 Patch0:     	%{name}-rpdb2.patch
 URL:		http://www.winpdb.org/
 BuildRequires:	python-devel >= 1:2.6
