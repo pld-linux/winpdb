@@ -10,8 +10,7 @@ Patch0:     	%{name}-rpdb2.patch
 URL:		http://www.winpdb.org/
 BuildRequires:	python-devel >= 1:2.6
 BuildRequires:	rpm-pythonprov
-%pyrequires_eq	python-modules
-Requires:	rpdb2
+Requires:	rpdb2 = %{version}-%{release}
 Requires:	python-wxPython
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,6 +34,7 @@ Winpdb zapewnia graficzny interfejs użytkownika dla Rpdb2.
 Summary:	Python console based debugger
 Summary(pl.UTF-8):	Debugger pythona na konsolę tesktową
 Group:		Development/Languages/Python
+%pyrequires_eq	python-modules
 
 %description -n rpdb2
 Rpdb2 is a platform independent GPL Python debugger with support for
