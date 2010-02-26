@@ -7,13 +7,13 @@ License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/winpdb/%{name}-%{version}.tar.gz
 # Source0-md5:	3658a9aa7ce31ab62590bc0a75635991
-Patch0:     	%{name}-rpdb2.patch
+Patch0:		%{name}-rpdb2.patch
 URL:		http://www.winpdb.org/
 BuildRequires:	python-devel >= 1:2.6
 BuildRequires:	rpm-pythonprov
-Requires:	rpdb2 = %{version}-%{release}
 Requires:	python-wxPython
-Buildarch:	noarch
+Requires:	rpdb2 = %{version}-%{release}
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -79,6 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitescriptdir}/winpdb.py[co]
 
 %files -n rpdb2
+%defattr(644,root,root,755)
 %doc README.txt
 %attr(755,root,root) %{_bindir}/rpdb2
 %{py_sitescriptdir}/rpdb2.py[co]
