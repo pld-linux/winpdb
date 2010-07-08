@@ -2,7 +2,7 @@ Summary:	Python debugger in wxGTK
 Summary(pl.UTF-8):	Debugger pythona w wxGTK
 Name:		winpdb
 Version:	1.4.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/winpdb/%{name}-%{version}.tar.gz
