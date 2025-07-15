@@ -54,7 +54,7 @@ Rpdb2 to Winpdb bez swojego graficznego interfejsu użytkownika.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 python setup.py build
